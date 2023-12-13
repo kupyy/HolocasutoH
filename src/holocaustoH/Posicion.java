@@ -19,4 +19,22 @@ public class Posicion {
 		this.posY = posY;
 	}
 	
+	//class constructor
+	public Posicion() {
+		
+	}
+	
+	public Posicion(int x, int y) {
+		posX = x;
+		posY = y;
+	}
+	
+	public boolean compararPos(Posicion p) {
+		boolean posEquals = false;
+		if(p.posX == this.posX && p.posY == this.posY) {
+			posEquals = true;
+		}
+		return posEquals;			
+	}
+	
 }
